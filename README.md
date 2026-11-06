@@ -27,19 +27,19 @@ Include = /etc/pacman.d/choutesos-mirrorlist
 Server = https://github.com/ChoutesOS/packages/releases/download/repo-$arch
 ```
 
-Software Update checks this repository every day and installs its updates together with the Arch updates.
+The App Store of ChoutesOS checks this repository in the background at every start and installs its updates together with the other system updates. A new version of `choutesos-release` is a new version of ChoutesOS.
 
 ## Packages
 
 | Package | Contents |
 | --- | --- |
 | `choutesos-keyring` | The key that signs the ChoutesOS packages |
-| `choutesos-release` | The ChoutesOS identity (`os-release`) and the address of this repository |
+| `choutesos-release` | The ChoutesOS identity and version (`os-release`) and the address of this repository |
 | `choutesos-branding` | ChoutesOS logos, application icon, and boot splash |
 | `choutesos-wallpapers` | The ChoutesOS wallpaper collection |
 | `choutesos-plasma-theme` | The ChoutesOS Dark and ChoutesOS Light themes for KDE Plasma |
 | `choutesos-settings` | Kernel and gaming tuning, zram, and the default applications |
-| `choutesos-welcome` | Welcome, Driver Manager, Software Update, and About ChoutesOS |
+| `choutesos-welcome` | Welcome, App Store, Driver Manager, and About ChoutesOS |
 | `choutesos-calamares-config` | The configuration and artwork of the ChoutesOS installer |
 | `plasma-setup` | The KDE first start wizard that creates the first user account |
 
