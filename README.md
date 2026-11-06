@@ -27,7 +27,7 @@ Include = /etc/pacman.d/choutesos-mirrorlist
 Server = https://github.com/ChoutesOS/packages/releases/download/repo-$arch
 ```
 
-The App Store of ChoutesOS checks this repository in the background at every start and installs its updates together with the other system updates. A new version of `choutesos-release` is a new version of ChoutesOS.
+The ChoutesOS Store of ChoutesOS checks this repository in the background at every start and installs its updates together with the other system updates. A new version of `choutesos-release` is a new version of ChoutesOS.
 
 ## Packages
 
@@ -39,7 +39,7 @@ The App Store of ChoutesOS checks this repository in the background at every sta
 | `choutesos-wallpapers` | The ChoutesOS wallpaper collection |
 | `choutesos-plasma-theme` | The ChoutesOS Dark and ChoutesOS Light themes for KDE Plasma |
 | `choutesos-settings` | Kernel and gaming tuning, zram, and the default applications |
-| `choutesos-welcome` | Welcome, App Store, Driver Manager, and About ChoutesOS |
+| `choutesos-welcome` | Welcome, ChoutesOS Store, Driver Manager, and About ChoutesOS |
 | `choutesos-calamares-config` | The configuration and artwork of the ChoutesOS installer |
 | `plasma-setup` | The KDE first start wizard that creates the first user account |
 
@@ -63,5 +63,4 @@ Each package carries the license of its contents. The ChoutesOS packages are lic
 ---
 
 <sub>© 2026 ChoutesOS. All rights reserved. ChoutesOS and the ChoutesOS logo are trademarks of ChoutesOS.<br>
-Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries. Arch Linux, KDE, and Plasma are trademarks of their respective owners.<br>
 ChoutesOS is an independent project and is not affiliated with Arch Linux.</sub>
