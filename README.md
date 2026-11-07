@@ -42,7 +42,11 @@ The ChoutesOS Store checks this repository in the background at every start and 
 | `choutesos-wallpapers` | The ChoutesOS wallpaper collection |
 | `choutesos-plasma-theme` | The ChoutesOS Dark and Light themes for KDE Plasma |
 | `choutesos-settings` | Kernel and gaming tuning, zram, the default applications, and the order of the repositories |
-| `choutesos-welcome` | Welcome, ChoutesOS Store, Driver Manager, About ChoutesOS, and the KDE Plasma testing gate |
+| `choutesos-store` | The ChoutesOS Store: applications, games, and the updates of ChoutesOS |
+| `choutesos-driver-manager` | Driver Manager: drivers for graphics, Wi-Fi, printers, and processors |
+| `choutesos-about` | About ChoutesOS |
+| `choutesos-welcome` | Welcome to ChoutesOS |
+| `choutesos-app-base` | The shared parts of the ChoutesOS applications, with the KDE Plasma testing gate |
 | `choutesos-calamares-config` | The configuration and artwork of the ChoutesOS installer |
 | `plasma-setup` | The KDE first start wizard that creates the first user account |
 
