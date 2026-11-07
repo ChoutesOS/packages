@@ -10,7 +10,7 @@
 
 # ChoutesOS package repository
 
-The signed pacman repository of ChoutesOS. Every ChoutesOS system uses it automatically to receive new versions of the ChoutesOS desktop, tools, and themes, next to the updates from the Arch repositories.
+The signed pacman repository of ChoutesOS. Every installed system uses it automatically to receive new versions of the desktop, tools, and themes, next to the updates from the Arch repositories.
 
 > [!IMPORTANT]
 > This repository is made for ChoutesOS only. Do not add it to other Arch-based systems.
@@ -20,6 +20,7 @@ The signed pacman repository of ChoutesOS. Every ChoutesOS system uses it automa
 The packages and the repository database are published in the [`repo-x86_64`](https://github.com/ChoutesOS/packages/releases/tag/repo-x86_64) release of this repository. ChoutesOS reads the address from `/etc/pacman.d/choutesos-mirrorlist`, which comes with the `choutesos-release` package:
 
 ```ini
+# /etc/pacman.conf: before [core], so that a ChoutesOS package always takes the place of a package with the same name
 [choutesos]
 Include = /etc/pacman.d/choutesos-mirrorlist
 
@@ -27,7 +28,9 @@ Include = /etc/pacman.d/choutesos-mirrorlist
 Server = https://github.com/ChoutesOS/packages/releases/download/repo-$arch
 ```
 
-The ChoutesOS Store of ChoutesOS checks this repository in the background at every start and installs its updates together with the other system updates. A new version of `choutesos-release` is a new version of ChoutesOS.
+The ChoutesOS Store checks this repository in the background at every start and installs its updates together with the other system updates. A new version of `choutesos-release` is a new version of ChoutesOS.
+
+`choutesos-plasma.json`, next to the database, names the KDE Plasma version that is released for ChoutesOS. While the Arch repositories have a newer Plasma that is still being tested, the system updates wait (at most 14 days) and only the ChoutesOS packages are installed.
 
 ## Packages
 
@@ -37,9 +40,9 @@ The ChoutesOS Store of ChoutesOS checks this repository in the background at eve
 | `choutesos-release` | The ChoutesOS identity and version (`os-release`) and the address of this repository |
 | `choutesos-branding` | ChoutesOS logos, application icon, and boot splash |
 | `choutesos-wallpapers` | The ChoutesOS wallpaper collection |
-| `choutesos-plasma-theme` | The ChoutesOS Dark and ChoutesOS Light themes for KDE Plasma |
-| `choutesos-settings` | Kernel and gaming tuning, zram, and the default applications |
-| `choutesos-welcome` | Welcome, ChoutesOS Store, Driver Manager, and About ChoutesOS |
+| `choutesos-plasma-theme` | The ChoutesOS Dark and Light themes for KDE Plasma |
+| `choutesos-settings` | Kernel and gaming tuning, zram, the default applications, and the order of the repositories |
+| `choutesos-welcome` | Welcome, ChoutesOS Store, Driver Manager, About ChoutesOS, and the KDE Plasma testing gate |
 | `choutesos-calamares-config` | The configuration and artwork of the ChoutesOS installer |
 | `plasma-setup` | The KDE first start wizard that creates the first user account |
 
@@ -62,5 +65,5 @@ Each package carries the license of its contents. The ChoutesOS packages are lic
 
 ---
 
-<sub>© 2026 ChoutesOS. All rights reserved. ChoutesOS and the ChoutesOS logo are trademarks of ChoutesOS.<br>
-ChoutesOS is an independent project and is not affiliated with Arch Linux.</sub>
+<sub>© 2026 ChoutesOS. All rights reserved.<br>
+The name and logo are trademarks. An independent project, not affiliated with Arch Linux.</sub>
