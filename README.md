@@ -42,7 +42,6 @@ The ChoutesOS Store checks this repository in the background at every start and 
 | `choutesos-wallpapers` | The ChoutesOS wallpaper collection |
 | `choutesos-plasma-theme` | The ChoutesOS Dark and Light themes for KDE Plasma |
 | `choutesos-settings` | Kernel and gaming tuning, zram, the default applications (also for computers installed with an older image), and the order of the repositories |
-| `choutesos-x11-session` | LXQt (X11): a light desktop with the ChoutesOS look for older and low-end computers, the second choice on the login screen |
 | `choutesos-store` | The ChoutesOS Store: applications, games, and the updates of ChoutesOS |
 | `choutesos-driver-manager` | Driver Manager: drivers for graphics, Wi-Fi, printers, and processors |
 | `choutesos-about` | About ChoutesOS |
